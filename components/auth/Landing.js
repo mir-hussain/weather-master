@@ -25,11 +25,10 @@ const Landing = ({ navigation }) => {
           }}
         />
         <Text style={styles.introHeader}>
-          Get the fastest delivery.
+          Get the latest forecast.
         </Text>
         <Text style={styles.introBody}>
-          Order medicine and get delivery in blink of an
-          eye.
+          Weather data is on your finger tips.
         </Text>
       </View>
       <View style={styles.buttonContainer}>
@@ -69,7 +68,6 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   introBody: {
-    width: "80%",
     color: Colors.lightGray,
     textAlign: "center",
     fontSize: 15,

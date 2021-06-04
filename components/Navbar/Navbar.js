@@ -1,8 +1,14 @@
 import React from "react";
-import { Text, View, StyleSheet } from "react-native";
+import {
+  Text,
+  View,
+  StyleSheet,
+  Platform,
+  StatusBar,
+} from "react-native";
 import firebase from "firebase/app";
 import "firebase/auth";
-import ButtonPrimary from "../Button/ButtonPrimary";
+import ButtonSecondary from "../Button/ButtonSecondary";
 
 const Navbar = () => {
   const handleSignOut = () => {
@@ -18,8 +24,8 @@ const Navbar = () => {
   };
   return (
     <View style={styles.container}>
-      <Text>Mir Hussain</Text>
-      <ButtonPrimary
+      <Text>Hello There</Text>
+      <ButtonSecondary
         text='Log out'
         onPress={handleSignOut}
       />
@@ -29,13 +35,17 @@ const Navbar = () => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "red",
     display: "flex",
     flexDirection: "row",
-    justifyContent: "space-evenly",
+    justifyContent: "space-between",
     alignItems: "center",
-    height: 50,
+    height: 70,
     width: "100%",
+    paddingHorizontal: 15,
+    paddingTop:
+      Platform.OS === "android"
+        ? StatusBar.currentHeight
+        : 0,
   },
 });
 

@@ -21,7 +21,7 @@ const Landing = ({ navigation }) => {
           source={{
             height: 200,
             width: 200,
-            uri: "https://live.staticflickr.com/65535/51224632604_69c653973a_o.png",
+            uri: "https://live.staticflickr.com/65535/51224754858_92c53ec633_o.png",
           }}
         />
         <Text style={styles.introHeader}>
@@ -48,9 +48,9 @@ const Landing = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: Colors.white,
     justifyContent: "space-between",
     alignItems: "center",
-    paddingHorizontal: 200,
     paddingTop:
       Platform.OS === "android"
         ? StatusBar.currentHeight

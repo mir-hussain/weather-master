@@ -1,6 +1,5 @@
-import { StatusBar } from "expo-status-bar";
-import React, { Component, useState } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import React, { useState } from "react";
+import { Text, View } from "react-native";
 
 import LandingScreen from "./components/auth/Landing";
 import RegisterScreen from "./components/auth/Register";

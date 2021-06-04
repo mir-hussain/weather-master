@@ -8,7 +8,7 @@ import {
 
 import Colors from "../../StyleRules/Color";
 
-const ButtonPrimary = ({ text, onPress }) => {
+const ButtonSecondary = ({ text, onPress }) => {
   return (
     <TouchableOpacity onPress={onPress}>
       <View style={styles.button}>
@@ -20,9 +20,9 @@ const ButtonPrimary = ({ text, onPress }) => {
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: Colors.blue,
-    paddingHorizontal: 8,
-    paddingVertical: 14,
+    backgroundColor: Colors.red,
+    paddingHorizontal: 5,
+    paddingVertical: 5,
     margin: 10,
     borderRadius: 5,
     display: "flex",
@@ -30,8 +30,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     color: "white",
-    fontWeight: "bold",
   },
 });
 
-export default ButtonPrimary;
+export default ButtonSecondary;

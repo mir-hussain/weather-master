@@ -1,11 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import {
-  Text,
-  View,
-  Button,
-  TextInput,
-} from "react-native";
+import { View, TextInput } from "react-native";
+import { Input } from "react-native-elements";
+import Icon from "react-native-vector-icons/FontAwesome";
 
 import firebase from "firebase/app";
 import "firebase/auth";
@@ -35,15 +32,21 @@ const Login = () => {
 
   return (
     <View>
-      <TextInput
+      <Input
         placeholder='Email'
         onChangeText={(email) => setUserEmail(email)}
+        leftIcon={
+          <Icon name='envelope' size={20} color='black' />
+        }
       />
-      <TextInput
+      <Input
         placeholder='Password'
         secureTextEntry={true}
         onChangeText={(password) =>
           setUserPassword(password)
+        }
+        leftIcon={
+          <Icon name='unlock-alt' size={24} color='black' />
         }
       />
       <ButtonPrimary

@@ -5,9 +5,10 @@ import {
   StyleSheet,
   SafeAreaView,
 } from "react-native";
+import Colors from "../../StyleRules/Color";
 
 import Navbar from "../Navbar/Navbar";
-import Result from "../Result/Result";
+import Search from "../Search/Search";
 
 const Home = () => {
   return (
@@ -16,7 +17,7 @@ const Home = () => {
         <Navbar />
       </View>
       <View>
-        <Result />
+        <Search />
       </View>
     </SafeAreaView>
   );
@@ -25,7 +26,7 @@ const Home = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "yellowgreen",
+    backgroundColor: Colors.white,
   },
 });
 
